@@ -32,7 +32,7 @@ You can add many options to this command. They are listed below.
 
 This will load the csv files into a data file that will be used to train the program. It will run by default through 60,000 iterations, but you can change this by changing the `i > 60000` on line 190 in neural_net.rb.
 
-After the program is finished training, it will create a `w1.txt` and a `w2.txt` file. These are the saved trained values and will be used for the eval purposes. Run `ruby lib/neural_net.rb --mode eval` to test the trained values against the test.csv files.
+After the program is finished training, it will create a `w1.txt` and a `w2.txt` file. These are the saved trained values and will be used for the eval purposes. Run `ruby lib/neural_net.rb --mode eval` to test the trained values against the test.csv files. This creates a `test_results.csv` file that you can look at to check accuracy.
 
 # Break Things
 
