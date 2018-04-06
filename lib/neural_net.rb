@@ -63,7 +63,7 @@ class NeuralNet
 
     data_table = DataTable.new({:file => './data/test.csv' , :label_index => :none})
 
-    CSV.open("./data/submission.csv", "wb") do |csv|
+    CSV.open("./data/test_results.csv", "wb") do |csv|
 
       csv << ["StatusID", "Label"]
 
