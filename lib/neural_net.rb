@@ -187,7 +187,7 @@ def train
     puts "Iteration = #{i}"
     puts "---"
 
-    if ratio < 1.0 and i > 60000
+    if ratio < 1.0 and i > 15000
       finish_time = Time.now
       puts File.open('./data/w1.txt','w'){|f| f << Marshal.dump(@w1.to_a)}
       puts File.open('./data/w2.txt','w'){|f| f << Marshal.dump(@w2.to_a)}
